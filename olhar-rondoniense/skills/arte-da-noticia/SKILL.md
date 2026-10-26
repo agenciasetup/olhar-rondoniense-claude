@@ -5,7 +5,7 @@ description: Faz as artes de uma notícia do Olhar Rondoniense para Instagram e 
 
 # Arte da notícia
 
-Versão 0.4, 26/10/2026. A arte é desenhada pelo próprio portal (linguagem inspirada em A Gazeta, com a marca do Olhar; ver `references/modelo.md`), para sair sempre igual e sem gastar IA. Esta skill pede a arte pelo conector (`fazer_arte`), confere pela prévia e entrega os links com a legenda. Você não desenha nem edita a imagem: se algo não ficou bom, peça de novo com outro ajuste.
+Versão 0.5, 26/10/2026. A arte é desenhada pelo próprio portal (linguagem inspirada em A Gazeta, com a marca do Olhar; ver `references/modelo.md`), para sair sempre igual e sem gastar IA. Esta skill pede a arte pelo conector (`fazer_arte`), confere pela prévia e entrega os links com a legenda. Você não desenha nem edita a imagem: se algo não ficou bom, peça de novo com outro ajuste.
 
 Leia `references/portal.md` (regras gerais) e `references/modelo.md` (como a arte é).
 
@@ -20,6 +20,7 @@ O Gabriel pede "faz a arte dessa notícia", "post para o Instagram", "carrossel"
 3. **Confira cada prévia** pelo checklist. Se algo falhar, peça de novo com o ajuste: `foco` (rosto atrás do texto), `variante: "cor"` (foto com marca d'água antiga ou que não serve), `titulo_da_arte` (título longo demais), `especial: "eleicoes"` (cobertura das eleições). Nunca mude o título da notícia publicada por causa da arte.
 4. **Escreva a legenda do post** no modelo de `references/modelo.md`: emoji do assunto e o fato na primeira linha, parágrafos curtos, serviço com ⬛ e ▪️ quando houver, "Leia a notícia completa no link da bio" e no máximo três hashtags (#OlharRondoniense e a cidade).
 5. **Entregue** os links dos arquivos (o campo `arquivo` de cada arte) e a legenda. Vídeo: diga para pôr a camada do título nos primeiros 5 a 8 segundos e a cartela final no último segundo e meio.
+6. **Para postar pelo portal** (Instagram, Facebook e Threads, com o editor-chefe aprovando no painel), siga a skill post-nas-redes: ela usa estas mesmas artes.
 
 ## Checklist da arte
 

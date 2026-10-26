@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Plugin da redação do Olhar Rondoniense para o Claude.",
-    "version": "0.6.0"
+    "version": "0.7.0"
   },
   "plugins": [
     {
       "name": "olhar-rondoniense",
       "source": "./olhar-rondoniense",
-      "description": "A redação do Olhar Rondoniense no Claude: o conector do portal (entra com o login do painel) e as skills de notícia a partir de release, vagas e concursos, pauta do dia, arte da notícia e tarefas agendadas da redação.",
-      "version": "0.6.0",
+      "description": "A redação do Olhar Rondoniense no Claude: o conector do portal (entra com o login do painel) e as skills de notícia a partir de release, vagas e concursos, pauta do dia, arte da notícia, post nas redes e tarefas agendadas da redação.",
+      "version": "0.7.0",
       "homepage": "https://olharondoniense.com.br/admin/claude"
     }
   ]
