@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "olhar-rondoniense": {
+      "type": "http",
+      "url": "https://olharondoniense.com.br/mcp"
+    }
+  }
+}
