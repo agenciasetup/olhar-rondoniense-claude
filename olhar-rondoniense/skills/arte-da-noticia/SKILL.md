@@ -5,7 +5,7 @@ description: Faz as artes de uma notícia do Olhar Rondoniense para Instagram e 
 
 # Arte da notícia
 
-Versão 0.5, 26/10/2026. A arte é desenhada pelo próprio portal (linguagem inspirada em A Gazeta, com a marca do Olhar; ver `references/modelo.md`), para sair sempre igual e sem gastar IA. Esta skill pede a arte pelo conector (`fazer_arte`), confere pela prévia e entrega os links com a legenda. Você não desenha nem edita a imagem: se algo não ficou bom, peça de novo com outro ajuste.
+Versão 0.6, 27/10/2026. A arte é desenhada pelo próprio portal (linguagem inspirada em A Gazeta, com a marca do Olhar; ver `references/modelo.md`), para sair sempre igual e sem gastar IA. Esta skill pede a arte pelo conector (`fazer_arte`), confere pela prévia e entrega os links com a legenda. Você não desenha nem edita a imagem: se algo não ficou bom, peça de novo com outro ajuste.
 
 Leia `references/portal.md` (regras gerais) e `references/modelo.md` (como a arte é).
 
@@ -16,10 +16,10 @@ O Gabriel pede "faz a arte dessa notícia", "post para o Instagram", "carrossel"
 ## Passo a passo
 
 1. **Ache a notícia** pelo link ou pelo número (`procurar_noticias` ou `ler_noticia`). Tem que estar publicada: arte de rascunho não sai.
-2. **Peça ao portal** com `fazer_arte` as artes do pedido. Sem pedido específico: `post` e `story`. Carrossel (`post`, `resumo`, `servico`, `final`) quando a notícia tem "Em poucas palavras" ou quadro de serviço (a resposta diz: `tem_resumo`, `tem_servico`). Vídeo: `reel` (camada do título, PNG transparente) e `fim` (cartela final).
+2. **Peça ao portal** com `fazer_arte` as artes do pedido. Sem pedido específico: `post` e `story`. Carrossel (`post`, `resumo`, `servico`, `final`) quando a notícia tem "Em poucas palavras" ou quadro de serviço (a resposta diz: `tem_resumo`, `tem_servico`). Vídeo em pé: `reel` (camada do título, PNG transparente). Vídeo deitado (entrevista, imagem de TV): `moldura` (o título em cima, a marca embaixo e a janela transparente de 1080 x 608 no meio, onde entra o vídeo). Os dois com `fim` (cartela final).
 3. **Confira cada prévia** pelo checklist. Se algo falhar, peça de novo com o ajuste: `foco` (rosto atrás do texto), `variante: "cor"` (foto com marca d'água antiga ou que não serve), `titulo_da_arte` (título longo demais), `especial: "eleicoes"` (cobertura das eleições). Nunca mude o título da notícia publicada por causa da arte.
 4. **Escreva a legenda do post** no modelo de `references/modelo.md`: emoji do assunto e o fato na primeira linha, parágrafos curtos, serviço com ⬛ e ▪️ quando houver, "Leia a notícia completa no link da bio" e no máximo três hashtags (#OlharRondoniense e a cidade).
-5. **Entregue** os links dos arquivos (o campo `arquivo` de cada arte) e a legenda. Vídeo: diga para pôr a camada do título nos primeiros 5 a 8 segundos e a cartela final no último segundo e meio.
+5. **Entregue** os links dos arquivos (o campo `arquivo` de cada arte) e a legenda. Vídeo: diga para pôr a camada do título nos primeiros 5 a 8 segundos (ou a moldura o vídeo todo, com o vídeo deitado encaixado na janela) e a cartela final no último segundo e meio.
 6. **Para postar pelo portal** (Instagram, Facebook e Threads, com o editor-chefe aprovando no painel), siga a skill post-nas-redes: ela usa estas mesmas artes.
 
 ## Checklist da arte
@@ -28,7 +28,7 @@ O Gabriel pede "faz a arte dessa notícia", "post para o Instagram", "carrossel"
 - [ ] Nenhum texto em cima de rosto (senão, recorte `foco: top` ou `bottom`).
 - [ ] Foto sem a marca d'água antiga no meio (senão, post sem foto ou outra foto).
 - [ ] Crédito da foto visível, quando a notícia tem crédito.
-- [ ] Selo no canto e faixa da marca no pé.
+- [ ] O nome "Olhar Rondoniense" e a pílula do site no pé (no story, só o nome).
 - [ ] Chapéu na cor da editoria.
 - [ ] Vaga e concurso: prazo de inscrição no carrossel (lâmina "Inscrições").
 

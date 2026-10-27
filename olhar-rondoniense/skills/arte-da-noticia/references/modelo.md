@@ -1,31 +1,33 @@
 # Modelo da arte da notícia
 
-Versão 0.3, 26/10/2026. Linguagem inspirada no perfil de A Gazeta (ES), com a marca do Olhar. A arte é desenhada pelo próprio portal, sempre igual, a partir dos campos da notícia: aqui está o que cada peça leva, para conferir.
+Versão 0.4, 27/10/2026. Na identidade visual do Olhar Rondoniense (os modelos de feed, story e reels da pasta da marca), com a organização de A Gazeta (ES): foto em cima, texto embaixo. A arte é desenhada pelo próprio portal, sempre igual, a partir dos campos da notícia: aqui está o que cada peça leva, para conferir.
 
 ## Marca
 
 | Elemento | Valor |
 | --- | --- |
-| Azul-marinho | `#002081` (faixa escura das artes: `#071437`) |
-| Faixa da marca, da esquerda para a direita | `#0045CD` para `#058C7D` para `#2F9E4D` (12 px no pé de toda arte) |
-| Amarelo de especial | `#FFCC29` (selo "Eleições 2026" e outras coberturas) |
-| Selo | O ícone redondo (círculo verde e azul com o mapa de Rondônia), no canto de cima à direita |
-| Títulos | Caladea Bold |
-| Texto, etiquetas | Roboto; etiqueta do vídeo em Montserrat ExtraBold, maiúsculas |
-| Cor da editoria | A mesma do site: Política azul, Polícia grafite, Cidades verde, Economia verde-água, Concursos azul-claro, Educação roxo, Saúde azul-céu, Entretenimento magenta |
+| Degradê da marca | Azul royal `#0045CE` / `#004BD9`, petróleo `#00859B` e verde `#34AB52`, em manchas suaves, com textura granulada |
+| Arcos | Linhas finas brancas em círculos, saindo de um canto (vêm do símbolo) |
+| Fonte | Sora: títulos e nome em negrito, "Olhar" em fino |
+| Nome | Símbolo em linha branca + "Olhar" (fino) e "Rondoniense" (negrito), em duas linhas |
+| Pílula do site | Branca, com o globo e "olharondoniense" em negrito + ".com.br", em petróleo `#00788F` |
+| Instagram | @olharondoniense (na cartela final) |
+| Amarelo de especial | `#FFE14D` (pílula "Eleições 2026" e outras coberturas) |
+| Cor da editoria | O texto do chapéu, na etiqueta branca: Política azul, Polícia grafite, Cidades verde, Economia verde-água, Concursos azul-claro, Educação roxo, Saúde azul-céu, Entretenimento magenta |
 
 ## Peças
 
 | Peça | Tamanho | Como é |
 | --- | --- | --- |
-| Post com foto | 1080 x 1350 | Foto em cima, ocupando o que sobra; embaixo, a faixa escura com chapéu (etiqueta branca, texto na cor da editoria), título grande e a linha fina. Um degradê liga a foto à faixa escura |
-| Post sem foto | 1080 x 1350 | O degradê da editoria no fundo, com o círculo claro no canto (o mesmo da página da editoria no site); chapéu, título e linha fina embaixo |
-| Carrossel | 1080 x 1350 | Capa = o post. Depois: "Em poucas palavras" (os pontos da notícia, numerados), "Inscrições" ou "Serviço" (o quadro de serviço) e a lâmina final com o endereço do site |
-| Story | 1080 x 1920 | Como o post, deixando livres os 250 px de cima e de baixo (o Instagram cobre com o nome e a caixa de resposta) |
-| Vídeo: camada do título | 1080 x 1920, fundo transparente | Para pôr nos primeiros 5 a 8 segundos do vídeo: etiqueta na cor da editoria, em maiúsculas, e o título em faixas brancas, letra escura. Cidade numa etiqueta escura em cima à esquerda; selo em cima à direita, que pode ficar o vídeo todo |
-| Vídeo: cartela final | 1080 x 1920 | Fundo azul, o selo grande, o logo e o endereço do site. 1,5 segundo no fim do vídeo |
+| Post com foto | 1080 x 1350 | Foto em cima, ocupando o que sobra; ela desce num véu azul que vira o degradê da marca. No degradê: chapéu (etiqueta branca, texto na cor da editoria), título, linha fina e, no pé, o nome do Olhar e a pílula do site. Arcos no canto de baixo |
+| Post sem foto | 1080 x 1350 | O degradê inteiro, com os arcos no canto de cima; chapéu, título, linha fina e o pé embaixo |
+| Carrossel | 1080 x 1350 | Capa = o post. Depois, em fundo claro: "Em poucas palavras" (os pontos numerados em círculos no degradê) e "Inscrições" ou "Serviço" (o quadro de serviço), com o símbolo colorido no pé. A lâmina final volta ao degradê, com o convite e a pílula do site |
+| Story | 1080 x 1920 | Como o post, deixando livres os 250 px de cima e de baixo (o Instagram cobre com o nome e a caixa de resposta); no pé, só o nome |
+| Vídeo em pé: camada do título | 1080 x 1920, fundo transparente | Para os primeiros 5 a 8 segundos: chapéu numa pílula com o degradê e o título em faixas brancas, letra escura. Cidade numa pílula escura em cima à esquerda; o símbolo em linha em cima à direita, que pode ficar o vídeo todo |
+| Vídeo deitado: moldura | 1080 x 1920, com janela transparente | Como o modelo de reels da marca: o título em cima, no degradê; no meio, a janela de 1080 x 608 (16:9) onde entra o vídeo; embaixo, o nome e a pílula do site. Fica o vídeo todo |
+| Vídeo: cartela final | 1080 x 1920 | O degradê com os arcos; no centro, o símbolo em linha, o nome, a pílula do site e o @olharondoniense. 1,5 segundo no fim do vídeo |
 
-Cobertura especial (ex.: eleições): o selo vira a pílula amarela "Eleições 2026" com o ícone.
+Cobertura especial (ex.: eleições): a pílula amarela "Eleições 2026" no canto de cima.
 
 ## Regras que o portal já cumpre
 

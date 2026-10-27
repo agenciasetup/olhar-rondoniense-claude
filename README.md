@@ -5,7 +5,7 @@ Plugin da redação do [Olhar Rondoniense](https://olharondoniense.com.br) para 
 - o **conector do portal** (o Claude opera o painel com o seu cargo; entra com o login do painel);
 - as **skills da redação**: notícia a partir de release, vagas e concursos, pauta do dia, arte da notícia, post nas redes (Instagram, Facebook e Threads, com aprovação do editor-chefe) e tarefas da redação (diga "configura as tarefas da redação" no Claude do computador e ele agenda a pauta do dia e as outras).
 
-Versão 0.7.0. O passo a passo com botões de copiar está no painel: **olharondoniense.com.br/admin/claude**.
+Versão 0.8.0. O passo a passo com botões de copiar está no painel: **olharondoniense.com.br/admin/claude**.
 
 ## App do Claude (computador, site ou celular; planos Pro e Max)
 
