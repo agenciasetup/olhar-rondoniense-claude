@@ -2,7 +2,7 @@
   "name": "olhar-rondoniense",
   "displayName": "Olhar Rondoniense",
   "description": "A redação do Olhar Rondoniense no Claude: o conector do portal (entra com o login do painel) e as skills de notícia a partir de release, vagas e concursos, pauta do dia, arte da notícia, post nas redes e tarefas agendadas da redação.",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "author": {
     "name": "Agência Setup"
   },
