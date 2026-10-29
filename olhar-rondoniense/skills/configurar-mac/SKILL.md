@@ -5,12 +5,13 @@ description: Deixa o Mac da redação pronto com um pedido. Confere o conector d
 
 # Configurar o Mac da redação
 
-Versão 0.1, 27/10/2026. Um pedido só ("configura o Olhar Rondoniense neste Mac") deixa o computador que fica ligado na redação (o Mac Studio do Gabriel) fazendo tudo sozinho:
+Versão 0.2, 29/10/2026 (o leitor versão 2 e as tarefas v3 avisam o painel: o Mac e as tarefas aparecem na tela Saúde). Um pedido só ("configura o Olhar Rondoniense neste Mac") deixa o computador que fica ligado na redação (o Mac Studio do Gabriel) fazendo tudo sozinho:
 
 - **Leitor de pautas:** lê as fontes oficiais a cada 15 minutos pela internet do Mac e manda para o portal. Os sites do Governo de Rondônia, da Polícia Civil e de algumas prefeituras recusam o servidor do portal, mas aceitam um computador em Rondônia.
 - **Mac acordado:** não entra em repouso sozinho (a tela ainda apaga). Não pede senha.
 - **Claude ao ligar:** o app abre quando o Mac liga, para as tarefas rodarem.
-- **Tarefas agendadas:** as 5 da skill tarefas-da-redacao (pauta do dia, rascunhos dos releases, prazos das vagas, avisos dos leitores, resumo da semana).
+- **Tarefas agendadas:** as 5 da skill tarefas-da-redacao (pauta do dia, rascunhos dos releases, prazos das vagas, avisos dos leitores, resumo da semana), versão 3: cada uma avisa o painel no fim.
+- **Na tela Saúde do painel** (administrador): o Mac aparece com o último contato, as fontes lidas, se está acordado e a versão do leitor; as tarefas, com a hora e o resultado de cada vez que rodaram.
 
 Leia `references/portal.md` (regras gerais).
 
@@ -27,7 +28,7 @@ Leia `references/portal.md` (regras gerais).
 5. **Leitor e Mac acordado.** Chame `instalar_leitor` com o nome `<nome do computador> (Olhar)`. Rode o `comando` que voltar no terminal deste Mac, como ele veio. Nunca escreva a chave na resposta (mostre só "orl_…"). A saída tem uma linha por fonte: "ok N" é certo (N pautas novas); "falha" ou "Não entendi" vai na resposta, em português simples. Se a ferramenta foi recusada (cargo), pule para o passo 6.
 6. **Claude ao ligar.** Veja se já está: `osascript -e 'tell application "System Events" to get the name of every login item'`. Se "Claude" não aparece: `osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Claude.app", hidden:true}'`. O macOS pode pedir permissão para o Claude controlar os Eventos do Sistema: a pessoa clica em OK. Se não der, passe o caminho à mão: Ajustes do Sistema > Geral > Itens de Início > + > Claude.
 7. **Tarefas agendadas.** Siga a skill tarefas-da-redacao, com as 5 tarefas da versão dela. Aqui, na aba Code, crie com a ferramenta de tarefas agendadas, se ela existir nesta conversa: elas rodam com o app aberto, e o Mac agora fica acordado e abre o Claude ao ligar. Sem a ferramenta, use o caminho da skill (botão Agendar).
-8. **Confira.** `ver_site` com a parte `fontes_de_pauta`: as fontes ligadas devem aparecer lidas há poucos minutos. Rode uma vez a tarefa "Olhar: pauta do dia" (Executar agora, ou a ferramenta de rodar tarefa) e veja se o conector respondeu.
+8. **Confira.** Com `ver_saude` (administrador): o Mac aparece em "computadores" com contato de agora, as fontes lidas e "Mac acordado: sim". Sem `ver_saude` (outro cargo), use `ver_site` com a parte `fontes_de_pauta`: as fontes ligadas devem aparecer lidas há poucos minutos. Rode uma vez a tarefa "Olhar: pauta do dia" (Executar agora, ou a ferramenta de rodar tarefa) e confira em `ver_saude` que ela avisou ("Pauta do dia", resultado ok). Problema aberto da área "computadores" ou "tarefas" vai na resposta, em português simples.
 
 ## Atualizar e tirar
 
@@ -48,7 +49,8 @@ Mac <nome> pronto para o Olhar Rondoniense:
 | Leitor de pautas | instalado: 14 fontes lidas agora |
 | Mac acordado | ligado |
 | Claude ao ligar | ligado |
-| Tarefas | 5 criadas (lista) |
+| Tarefas | 5 criadas, versão 3 (lista) |
+| Tela Saúde | o Mac e a "Pauta do dia" já aparecem |
 
 <o que faltou e por quê, se faltou>
 Para tirar tudo deste Mac: peça "tira o Olhar deste Mac".
